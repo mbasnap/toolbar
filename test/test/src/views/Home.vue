@@ -14,20 +14,17 @@ import HomeBanner from '@/components/HomeBanner'
 import HomeAcquanted from '@/components/HomeAcquanted'
 import HomeUsers from '@/components/HomeUsers'
 import HomeRegister from '@/components/HomeRegister'
-function ibg(){
-
-let ibg=document.querySelectorAll(".ibg");
-for (var i = 0; i < ibg.length; i++) {
-if(ibg[i].querySelector('img')){
-ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-}
-}
-}
+  function ibg() {
+    let ibg = document.querySelectorAll(".ibg")
+    for (var i = 0; i < ibg.length; i++) {
+      if(ibg[i].querySelector('img')){
+        ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+      }
+    }
+  }
 export default {
   mounted(){
-    // console.log(document.querySelectorAll(".ibg"));
-    ibg()
-    
+    ibg()    
   },
   name: 'Home',
   components: { HomeBanner, HomeAcquanted, HomeUsers, HomeRegister }

@@ -11,7 +11,7 @@
           </div>
           <div class="banner__btn btn">Sing up now</div>
         </div>
-      </div>
+  </div>
 </template>
 
 <script>
